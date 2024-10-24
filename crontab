@@ -1,3 +1,14 @@
-* * * * * curl -L http://lakant-app-3x2kq.ondigitalocean.app:80/ >/proc/1/fd/1 2>/proc/1/fd/2
+<!--
+* * * * *
+| | | | |
+| | | | +---- Day of the week (0 - 7) (Sunday=0 or 7)
+| | | +------ Month (1 - 12)
+| | +-------- Day of the month (1 - 31)
+| +---------- Hour (0 - 23)
++------------ Minute (0 - 59)
+-->
+
+
+59 * * * * curl -L http://lakant-app-3x2kq.ondigitalocean.app:80/ >/proc/1/fd/1 2>/proc/1/fd/2
 
 # An empty line is required at the end of this file for a valid cron file.
