@@ -8,6 +8,7 @@
 
 
 
-1 * * * * curl -L http://lakant-app-3x2kq.ondigitalocean.app:80/ >/proc/1/fd/1 2>/proc/1/fd/2
+1 * * * * curl -L http://lakant-app-3x2kq.ondigitalocean.app:80/acquire_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
+1 * * * * curl -L http://lakant-app-3x2kq.ondigitalocean.app:80/load_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
 
 # An empty line is required at the end of this file for a valid cron file.
