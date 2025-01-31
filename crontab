@@ -9,7 +9,7 @@
 
 
 # * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/acquire_FTSE >/proc/1/fd/1 2>/proc/1/fd/2
-* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/acquire_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
+# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/acquire_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
 
 # * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/load_FTSE >/proc/1/fd/1 2>/proc/1/fd/2
 # * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/load_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
