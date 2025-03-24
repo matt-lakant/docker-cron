@@ -8,18 +8,18 @@
 
 
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/acquire_FTSE >/proc/1/fd/1 2>/proc/1/fd/2
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/acquire_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/acquire_FTSE >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/acquire_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/load_FTSE >/proc/1/fd/1 2>/proc/1/fd/2
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/load_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load_FTSE >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load_SOLA >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/consolidate >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/consolidate >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/normalize >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/normalize >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/check >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/check >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app:8080/cleanse >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/save >/proc/1/fd/1 2>/proc/1/fd/2
 
 # An empty line is required at the end of this file for a valid cron file.
