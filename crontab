@@ -13,7 +13,7 @@
 
 # * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=FACI >/proc/1/fd/1 2>/proc/1/fd/2
 # * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=FTSE >/proc/1/fd/1 2>/proc/1/fd/2
-* * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=SOLA >/proc/1/fd/1 2>/proc/1/fd/2
+# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=SOLA >/proc/1/fd/1 2>/proc/1/fd/2
 
 # * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/consolidate >/proc/1/fd/1 2>/proc/1/fd/2
 
