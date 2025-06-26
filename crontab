@@ -7,26 +7,27 @@
 # +------------ Minute (0 - 59)
 
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/acquire?data_provider=FACI >/proc/1/fd/1 2>/proc/1/fd/2
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/acquire?data_provider=FTSE >/proc/1/fd/1 2>/proc/1/fd/2
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/acquire?data_provider=SOLA >/proc/1/fd/1 2>/proc/1/fd/2
+# Runs at 00 min and 30 min every hour, between 19 and 09 o'clock 
+0,30 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/acquire?data_provider=FACI >/proc/1/fd/1 2>/proc/1/fd/2
+2,32 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/acquire?data_provider=FTSE >/proc/1/fd/1 2>/proc/1/fd/2
+4,34 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/acquire?data_provider=SOLA >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=FACI >/proc/1/fd/1 2>/proc/1/fd/2
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=FTSE >/proc/1/fd/1 2>/proc/1/fd/2
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=SOLA >/proc/1/fd/1 2>/proc/1/fd/2
+6,36 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=FACI >/proc/1/fd/1 2>/proc/1/fd/2
+8,38 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=FTSE >/proc/1/fd/1 2>/proc/1/fd/2
+10,40 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/load?data_provider=SOLA >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/consolidate >/proc/1/fd/1 2>/proc/1/fd/2
+12,42 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/consolidate >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/normalize >/proc/1/fd/1 2>/proc/1/fd/2
+14,44 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/normalize >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/check >/proc/1/fd/1 2>/proc/1/fd/2
+16,46 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/check >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/save >/proc/1/fd/1 2>/proc/1/fd/2
+18,48 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/save >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/sort >/proc/1/fd/1 2>/proc/1/fd/2
+20,50 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/sort >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/pack >/proc/1/fd/1 2>/proc/1/fd/2
+22,52 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/pack >/proc/1/fd/1 2>/proc/1/fd/2
 
-# * * * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/ship >/proc/1/fd/1 2>/proc/1/fd/2
+24,54 19-23,0-9 * * * curl -L -H "X-API-Key: $API_KEY_DJ" http://lakant-app-3x2kq.ondigitalocean.app/api/v1/data-processing/ship >/proc/1/fd/1 2>/proc/1/fd/2
 
 # An empty line is required at the end of this file for a valid cron file.
